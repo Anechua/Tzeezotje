@@ -13,5 +13,4 @@ import {renderSlider} from './slider.js'
 renderMenu();
 renderModal();
 onRequestButtonClick();
-renderSlider ();
-
+renderSlider();

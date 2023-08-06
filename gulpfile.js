@@ -80,10 +80,12 @@ const build = gulp.series(
   )
 );
 
-const start = gulp.series (
+const start = gulp.series(
   build,
-  server,
-  watch
+  gulp.series(
+    server,
+    watch
+  )
 );
 
 

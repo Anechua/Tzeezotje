@@ -1,7 +1,7 @@
 import Swiper from 'swiper';
 import {Navigation} from 'swiper/modules';
 
-const renderSlider = new Swiper('.swiper', {
+const renderSlider = () => new Swiper('.swiper', {
   modules: [Navigation],
 
   navigation: {
