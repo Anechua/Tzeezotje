@@ -1,0 +1,41 @@
+.specials__item {
+  padding: 10px;
+  border-bottom: 2px solid #E7E7E7;
+}
+
+.specials__date,
+.specials__dish {
+  margin: 0;
+}
+
+.specials__container {
+  text-align: center;
+}
+
+.specials__date {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  margin-block-end: 5px;
+}
+
+.specials__dish {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.specials__devider {
+  width: 40px;
+  display: flex;
+  justify-content: space-between;
+  margin-inline: auto;
+  margin-block: 10px;
+}
+
+.specials__decor {
+  width: 5px;
+  height: 5px;
+  background-color: #D3B47F;
+  border-radius: 50%;
+}

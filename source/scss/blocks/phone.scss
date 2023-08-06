@@ -1,0 +1,21 @@
+.phone {
+  padding: 10px;
+}
+
+.phone__link {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.phone__link:hover {
+  color: #D3B47F;
+}
+
+.phone__link::before {
+  content: url("../images/phone.svg");
+  width: 30px;
+  height: 30px;
+  margin-inline-end: 10px;
+}

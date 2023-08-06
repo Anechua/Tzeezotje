@@ -1,0 +1,44 @@
+.advantages__item {
+  padding-inline: 10px;
+  padding-block: 125px 10px;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 250px;
+  color: #fff;
+  background-color: #3A4574;
+}
+.advantages__item--food {
+  background-image: url("../images/meat.jpg");
+}
+
+.advantages__item--atmosphere {
+  background-image: url("../images/beer.jpg");
+}
+
+.advantages__item--cocktails {
+  background-image: url("../images/cocktails.jpg");
+}
+
+.advantages__title {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 24px;
+  margin-block: 2px 10px;
+  position: relative;
+}
+
+.advantages__title::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  right: 182px;
+  width: 108px;
+  height: 3px;
+  background-color: #D3B47F;
+  margin-top: 5px;
+}
+
+.advantages__description {
+  margin-block: 0 5px;
+}
