@@ -31,13 +31,14 @@ const copy = (done) => {
   done();
 }
 
-const js = () => {
+const scripts = () => {
   return gulp.src('source/js/main.js')
     .pipe(gulpEsbuild({
       outfile: 'bundle.js',
       bundle: true,
     }))
     .pipe(gulp.dest('build/scripts'))
+    .pipe(browser.stream());
 }
 
 const server = (done) => {
@@ -59,6 +60,7 @@ const reload = (done) => {
 
 const watch = () => {
   gulp.watch('source/scss/**/*.scss', gulp.series(styles));
+  gulp.watch('source/js/**/*.js', gulp.series(scripts));
   gulp.watch('source/*.html', gulp.series(html, reload));
 };
 
@@ -66,7 +68,7 @@ const build =  gulp.parallel(
   html,
   copy,
   styles,
-  js
+  scripts
 );
 
 const start = gulp.series (

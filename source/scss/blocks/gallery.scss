@@ -3,6 +3,7 @@
   min-height: 400px;
   color: #fff;
   margin-block-end: 10px;
+  position: relative;
 }
 
 .gallery__header {
@@ -11,4 +12,32 @@
 
 .gallery__info {
   font-size: 16px;
+}
+
+.gallery__slider .swiper {
+  width: 100%;
+
+}
+
+.gallery .slider-button {
+  position: absolute;
+  z-index: 2;
+  bottom: 80px;
+}
+
+.gallery .slider-button--forward {
+  right: 5px;
+}
+
+
+.gallery .slider-button--backward {
+  left: 5px;
+}
+
+.gallery .slider-button svg {
+  stroke:#D3B47F;
+}
+
+.gallery .slider-button--disabled svg {
+  stroke:#fff;
 }

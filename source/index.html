@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tzeezotje</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
     <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body class="page__body">
@@ -196,9 +197,31 @@
     <section class="main__gallery gallery">
       <h2 class="gallery__header">Sfeerfoto's</h2>
       <p class="gallery__info">De beste manier om de sfeer te ervaren is eens langskomen. In tussentijd hebben we hier alvast wat foto’s voor je klaar.</p>
-      <!-- <button class="gallery__slider-button slider-button slider-button--backward"></button>
-      <button class="gallery__slider-button slider-button slider-button--forward"></button> -->
-      <div class="gallery__slider"></div>
+      <button class="gallery__slider-button button slider-button slider-button--backward">
+        <svg class="slider-button__arrow" width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M43.8958 11.9L24.8791 30.9166C22.6333 33.1625 22.6333 36.8375 24.8791 39.0833L43.8958 58.1"  stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+      <button class="gallery__slider-button button slider-button slider-button--forward">
+        <svg class="slider-button__arrow" width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M43.8958 11.9L24.8791 30.9166C22.6333 33.1625 22.6333 36.8375 24.8791 39.0833L43.8958 58.1" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+      <div class="gallery__slider">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./images/slider_pic1.jpg" alt="" width="970" height="646">
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/slider_pic2.jpg" alt="" width="970" height="647">
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/slider_pic3.jpg" alt="" width="970" height="647">
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
   <footer class="page__footer footer">

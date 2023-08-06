@@ -10,11 +10,15 @@
   vertical-align: middle;
   padding-block: 10px 10px;
   box-sizing: border-box;
+
+  &:hover svg line {
+    stroke: #D3B47F;
+  }
 }
 
 .menu__container {
   position: absolute;
-  width: 320px;
+  width: $device-width;
   top: 100%;
   right: -10px;
   padding: 10px;
