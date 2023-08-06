@@ -4223,7 +4223,7 @@
   }
 
   // source/js/slider.js
-  var renderSlider = new Swiper(".swiper", {
+  var renderSlider = () => new Swiper(".swiper", {
     modules: [Navigation],
     navigation: {
       nextEl: ".slider-button--forward",
