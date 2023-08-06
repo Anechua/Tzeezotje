@@ -19,6 +19,7 @@
   "homepage": "https://github.com/Anechua/Tzeezotje#readme",
   "devDependencies": {
     "browser-sync": "^2.29.3",
+    "del": "^7.0.0",
     "gulp": "^4.0.2",
     "gulp-htmlmin": "^5.0.1",
     "gulp-sass": "^5.1.0",

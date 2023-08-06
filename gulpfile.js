@@ -4,6 +4,7 @@ import htmlmin from 'gulp-htmlmin';
 import dartSass from 'sass';
 import gulpSass from 'gulp-sass';
 import gulpEsbuild from 'gulp-esbuild';
+import {deleteAsync} from 'del';
 
 const sass = gulpSass(dartSass);
 
@@ -41,6 +42,11 @@ const scripts = () => {
     .pipe(browser.stream());
 }
 
+const clean = (done) => {
+  deleteAsync('build');
+  done();
+}
+
 const server = (done) => {
   browser.init({
     server: {
@@ -64,11 +70,14 @@ const watch = () => {
   gulp.watch('source/*.html', gulp.series(html, reload));
 };
 
-const build =  gulp.parallel(
-  html,
-  copy,
-  styles,
-  scripts
+const build = gulp.series(
+  clean,
+  gulp.parallel(
+    html,
+    copy,
+    styles,
+    scripts
+  )
 );
 
 const start = gulp.series (
