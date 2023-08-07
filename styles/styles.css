@@ -633,6 +633,7 @@ img {
   height: 100%;
   background-color: rgba(242, 242, 242, 0.8);
   z-index: 2;
+  overflow: auto;
 }
 
 .modal__container {
@@ -642,7 +643,7 @@ img {
   margin: 0 auto;
   background-color: #fff;
   position: relative;
-  height: 100%;
+  overflow-y: auto;
 }
 
 .modal__close-button {
